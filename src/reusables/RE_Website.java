@@ -8,22 +8,13 @@ import org.openqa.selenium.WebElement;
 
 public class RE_Website {
 	
-	
-		    //WebDriver driver;
+	public static String Website_Title = "Online meeting and appointment scheduling software";
 
-	       //private static WebElement element = null;
-
-	   /* public RE_HomePage(WebDriver driver) {
-	        this.driver = driver;
-	    }*/
-
-	        public static WebElement getSearchBar(WebDriver driver) {
-	        return driver.findElement(By.id("srchBarShwInfo"));
+	        public static WebElement SignInBtn(WebDriver driver) {
+	        return driver.findElement(By.cssSelector(".btn.orange"));
 	        }
 
-	    public static WebElement getLoginBtn(WebDriver driver) {
-	        return driver.findElement(By.linkText("Login"));
-	            }
+	    
 
 
 	}

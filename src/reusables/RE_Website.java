@@ -11,7 +11,9 @@ public class RE_Website {
 	public static String Website_Title = "Online meeting and appointment scheduling software";
 
 	        public static WebElement SignInBtn(WebDriver driver) {
-	        return driver.findElement(By.cssSelector(".btn.orange"));
+	        	
+	        	driver.switchTo().frame("signinframe");
+	        return driver.findElement(By.linkText("Sign in"));
 	        }
 
 	    

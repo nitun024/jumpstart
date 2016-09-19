@@ -39,7 +39,7 @@ public class Login {
 		else
 			System.out.println("Incorrect page has been opened.");
 		
-		Thread.sleep(20000);
+		//Thread.sleep(20000);
 		
 		RE_Website.SignInBtn(driver).click();
 		
